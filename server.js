@@ -1,6 +1,20 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
+var mysql = require('mysql');
+
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'pi',
+  password : 'raspberry',
+  database : 'exampledb'
+});
+
+// connection.connect()
+
+// connection.end()
+
 const app = express();
+
 
 const { createServer } = require('node:http');
 
