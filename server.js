@@ -18,7 +18,8 @@ const app = express();
 
 const { createServer } = require('node:http');
 
-const hostname = '10.62.2.27';
+// const hostname = '10.62.2.27';
+const hostname = 'localhost';
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
